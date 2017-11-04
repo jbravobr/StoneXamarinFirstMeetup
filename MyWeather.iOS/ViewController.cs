@@ -39,7 +39,7 @@ namespace MyWeather.iOS
 			UIAlertView alert = new UIAlertView()
 			{
 				Title = "Aviso sobre o tempo",
-				Message = $"a temperatura atual é: {currentWeather.Main.Temp.ToString()}"
+				Message = $"a temperatura atual é: {Math.Round(currentWeather.TempInCelsius, 0).ToString()}"
 			};
 			loadPop.Hide();
 			alert.AddButton("OK");

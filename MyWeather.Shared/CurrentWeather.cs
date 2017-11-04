@@ -20,6 +20,16 @@ namespace MyWeather
 		[JsonProperty("base")]
 		public string Base { get; set; }
 
+		[JsonIgnore]
+		public double TempInCelsius
+		{
+			get
+			{
+				var celsius = Main.Temp - 273.15;
+				return celsius;
+			}
+		}
+
 		[JsonProperty("cod")]
 		public long Cod { get; set; }
 

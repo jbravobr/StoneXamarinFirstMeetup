@@ -3,6 +3,7 @@ using Android.Widget;
 using Android.OS;
 using MyWeather.Shared;
 using Android.Support.V7.App;
+using System;
 
 namespace MyWeather.Droid
 {
@@ -41,7 +42,7 @@ namespace MyWeather.Droid
 
 				progress.Dismiss();
 				alert.SetTitle("Aviso sobre o tempo");
-				alert.SetMessage($"a temperatura atual é: {currentWeather.Main.Temp.ToString()}");
+				alert.SetMessage($"a temperatura atual é: {Math.Round(currentWeather.TempInCelsius, 0).ToString()}");
 				alert.SetPositiveButton("OK", (sender, e) => { });
 
 				Dialog dialog = alert.Create();

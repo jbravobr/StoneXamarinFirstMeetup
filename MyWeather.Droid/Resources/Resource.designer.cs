@@ -2787,6 +2787,12 @@ namespace MyWeather.Droid
 			// aapt resource value: 0x7f080084
 			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131230852;
 			
+			// aapt resource value: 0x7f08015f
+			public const int MyTheme = 2131231071;
+			
+			// aapt resource value: 0x7f080160
+			public const int MyTheme_Base = 2131231072;
+			
 			// aapt resource value: 0x7f08001e
 			public const int Platform_AppCompat = 2131230750;
 			
